@@ -54,7 +54,7 @@ We'll use a range of technologies:
 * Create Secrets scope in Databricks
 * Store secretes in Key Vault and access them
 
-Click [here](../Lab-01/readme.md) to start with the implementation.
+Click [here](Lab-01/readme.md) to start with the implementation.
 
 
  
