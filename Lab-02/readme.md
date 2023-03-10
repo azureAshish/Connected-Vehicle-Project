@@ -1,109 +1,67 @@
-# Create S3 bucket in AWS account and upload data
+# Create ADLS Storage Account
 
-Welcome to the session in this session, we will going to create the Azure data storage account, which
+Welcome to this lab where we will create the Azure data storage account.
 
-is our landing folder.
+Here are the steps to follow for creating Azure Data Lake Storage (ADLS) account in Azure Portal:
 
-So if you remember our architecture diagram, you can see that once our file moved from the A.W. as
+* On the Azure portal home page, click on "Create a resource" icon to create a new resource
 
-a twist to it, it need to be placed within the landing folder in that storage account.
+<img src="images/05.jpg">
 
-So for that, we need to create the storage account.
+* In the search box for Marketplace, type in "Storage Account" and press Enter
 
-So let's go to the Azure portal and create the landing folder.
+<img src="images/06.jpg">
 
-So I'm on my Azure portal.
+* Click on "Storage Account" and then click on "Create" button
 
-So in this Azure portal, you go and select Insert Storage account.
+<img src="images/07.jpg">
 
-I have Kopaloff already created storage accounts.
+* In the Project Details section, select your Azure subscription 
+* Provide a name for Resource Group
+* In the instance details section, provide a storage account name 
+* Select your region
 
-I can see all of them.
+<img src="images/10.jpg">
 
-It is not mandatory to create a new storage account if you already have an storage account and if you
+* In the instance details section, select Redundancy for your storage account
+* Click on "Next : Advanced" button
 
-want to use that self, you can use that also.
+<img src="images/20.jpg">
 
-But I'm showing it for people who does not have any storage account, so let's see how we can create
+* In the Data Lake Storage Gen2 section in the Advanced tab, check the check box for "Enable Hierarchical Namespace"
+* Click on "Next: Networking" button
 
-that storage account.
+<img src="images/30.jpg">
 
-To be clear, this will take you to their storage can be blurred
 
-again.
+* Keep the default sesstings in Networking, Data Protection, Encyption and Tags tabs
+* On the Review tab, review your settings and click "Create" button
 
-Like for any resource, I will always ask you the subscription in which you want to create.
+<img src="images/40.jpg">
 
-So you can select the subscription.
+* Wait for a few seconds for the deployment to complete. Ensure that the deployment succeded and the resource was created. 
+* Click on the "Go to resource" button
 
-It will ask you to create the household group, so I'm selecting the Project one, which is the same
+<img src="images/50.jpg">
 
-resource group which we have created used for creating the ETF account.
+* Click on Data Lake Storage
 
-Then it asked me the storage account name, so I'm just giving a storage project one you can give any
+<img src="images/60.jpg">
 
-name as per your convenience because if I take up this name, you probably probably will not be able
+* Let's create the container now
+* Click on container and provide "Input" as name for this container
 
-to give the same name because it goes to his account.
+<img src="images/70.jpg">
 
-Name need to be unique across the aisle as your client.
+* Inside the container "Input", let us now create a folder by clikcing on "Add a Directory" button and providing "Landing" as the name
+* Click on "Save" button
 
-You can select the performance as the standard itself.
+<img src="images/80.jpg">
 
-Read an entry level if you want to load it down just for a testing purpose.
+* "Landing" folder is the place where we want to see all our files get dropped from AWS.
 
-You can use local remained or you can keep the then it's up to you.
+<img src="images/90.jpg">
 
-Move to the next.
+That's the end of this lab. 
 
-It runs here.
-
-If you go, scroll down a little bit here, you will enable critical namespace.
-
-So if you select this, then this is a storage account will get converted into a dealer's Gen2 account.
-
-So just select that list you can keep as it is.
-
-You can keep all this default and you can click on next.
-
-Again, you can click next.
-
-Keeping everything as default again next.
-
-And finally, you click on Review Plus Create.
-
-This will create your first Azure account and Saudi agent storage account.
-
-It will take some time, maybe a few seconds, so I will fast forward it now you can see that our strategic
-
-on has been created.
-
-So let's click on good resource.
-
-This will take me to the storage account.
-
-Now here you can see data storage.
-
-So click on that.
-
-Let's create the container.
-
-So click on container.
-
-I'm giving them as input and concrete, so this will create a container input inside my storage account.
-
-Now here inside this storage account container, let's create a one folder that is our landing.
-
-So this is the folder where I want to see all my files get drubbed from E.W..
-
-So this will be our landing folder.
-
-That's all for this session.
-
-We'll see you in the next session.
-
-<img src="images/60.jpg" width=60% height=60%>
-
-That's the end of this lab. Let's see how to create the landing folder in Azure Storage now.
-
-[Back](../readme.md)  [Next](../Lab-02/readme.md)
+[Back](../Lab-01/readme.md)  [Next](../Lab-03/readme.md)
